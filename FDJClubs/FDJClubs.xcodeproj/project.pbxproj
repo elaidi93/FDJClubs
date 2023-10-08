@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3927C4172AD32A6D00BF5F49 /* FDJClubsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4162AD32A6D00BF5F49 /* FDJClubsApp.swift */; };
+		3927C4192AD32A6D00BF5F49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4182AD32A6D00BF5F49 /* ContentView.swift */; };
+		3927C41B2AD32A6E00BF5F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3927C41A2AD32A6E00BF5F49 /* Assets.xcassets */; };
+		3927C41F2AD32A6E00BF5F49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3927C41E2AD32A6E00BF5F49 /* Preview Assets.xcassets */; };
+		3927C4292AD32A6E00BF5F49 /* FDJClubsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4282AD32A6E00BF5F49 /* FDJClubsTests.swift */; };
+		3927C4332AD32A6E00BF5F49 /* FDJClubsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4322AD32A6E00BF5F49 /* FDJClubsUITests.swift */; };
+		3927C4352AD32A6E00BF5F49 /* FDJClubsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4342AD32A6E00BF5F49 /* FDJClubsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3927C4252AD32A6E00BF5F49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3927C40B2AD32A6D00BF5F49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3927C4122AD32A6D00BF5F49;
+			remoteInfo = FDJClubs;
+		};
+		3927C42F2AD32A6E00BF5F49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3927C40B2AD32A6D00BF5F49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3927C4122AD32A6D00BF5F49;
+			remoteInfo = FDJClubs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3927C4132AD32A6D00BF5F49 /* FDJClubs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FDJClubs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3927C4162AD32A6D00BF5F49 /* FDJClubsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJClubsApp.swift; sourceTree = "<group>"; };
+		3927C4182AD32A6D00BF5F49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3927C41A2AD32A6E00BF5F49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3927C41C2AD32A6E00BF5F49 /* FDJClubs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FDJClubs.entitlements; sourceTree = "<group>"; };
+		3927C41E2AD32A6E00BF5F49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3927C4242AD32A6E00BF5F49 /* FDJClubsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDJClubsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3927C4282AD32A6E00BF5F49 /* FDJClubsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJClubsTests.swift; sourceTree = "<group>"; };
+		3927C42E2AD32A6E00BF5F49 /* FDJClubsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDJClubsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3927C4322AD32A6E00BF5F49 /* FDJClubsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJClubsUITests.swift; sourceTree = "<group>"; };
+		3927C4342AD32A6E00BF5F49 /* FDJClubsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJClubsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3927C4102AD32A6D00BF5F49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3927C4212AD32A6E00BF5F49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3927C42B2AD32A6E00BF5F49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3927C40A2AD32A6D00BF5F49 = {
+			isa = PBXGroup;
+			children = (
+				3927C4152AD32A6D00BF5F49 /* FDJClubs */,
+				3927C4272AD32A6E00BF5F49 /* FDJClubsTests */,
+				3927C4312AD32A6E00BF5F49 /* FDJClubsUITests */,
+				3927C4142AD32A6D00BF5F49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3927C4142AD32A6D00BF5F49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3927C4132AD32A6D00BF5F49 /* FDJClubs.app */,
+				3927C4242AD32A6E00BF5F49 /* FDJClubsTests.xctest */,
+				3927C42E2AD32A6E00BF5F49 /* FDJClubsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3927C4152AD32A6D00BF5F49 /* FDJClubs */ = {
+			isa = PBXGroup;
+			children = (
+				3927C4162AD32A6D00BF5F49 /* FDJClubsApp.swift */,
+				3927C4182AD32A6D00BF5F49 /* ContentView.swift */,
+				3927C41A2AD32A6E00BF5F49 /* Assets.xcassets */,
+				3927C41C2AD32A6E00BF5F49 /* FDJClubs.entitlements */,
+				3927C41D2AD32A6E00BF5F49 /* Preview Content */,
+			);
+			path = FDJClubs;
+			sourceTree = "<group>";
+		};
+		3927C41D2AD32A6E00BF5F49 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3927C41E2AD32A6E00BF5F49 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3927C4272AD32A6E00BF5F49 /* FDJClubsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3927C4282AD32A6E00BF5F49 /* FDJClubsTests.swift */,
+			);
+			path = FDJClubsTests;
+			sourceTree = "<group>";
+		};
+		3927C4312AD32A6E00BF5F49 /* FDJClubsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3927C4322AD32A6E00BF5F49 /* FDJClubsUITests.swift */,
+				3927C4342AD32A6E00BF5F49 /* FDJClubsUITestsLaunchTests.swift */,
+			);
+			path = FDJClubsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3927C4122AD32A6D00BF5F49 /* FDJClubs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3927C4382AD32A6E00BF5F49 /* Build configuration list for PBXNativeTarget "FDJClubs" */;
+			buildPhases = (
+				3927C40F2AD32A6D00BF5F49 /* Sources */,
+				3927C4102AD32A6D00BF5F49 /* Frameworks */,
+				3927C4112AD32A6D00BF5F49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FDJClubs;
+			productName = FDJClubs;
+			productReference = 3927C4132AD32A6D00BF5F49 /* FDJClubs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3927C4232AD32A6E00BF5F49 /* FDJClubsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3927C43B2AD32A6E00BF5F49 /* Build configuration list for PBXNativeTarget "FDJClubsTests" */;
+			buildPhases = (
+				3927C4202AD32A6E00BF5F49 /* Sources */,
+				3927C4212AD32A6E00BF5F49 /* Frameworks */,
+				3927C4222AD32A6E00BF5F49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3927C4262AD32A6E00BF5F49 /* PBXTargetDependency */,
+			);
+			name = FDJClubsTests;
+			productName = FDJClubsTests;
+			productReference = 3927C4242AD32A6E00BF5F49 /* FDJClubsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3927C42D2AD32A6E00BF5F49 /* FDJClubsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3927C43E2AD32A6E00BF5F49 /* Build configuration list for PBXNativeTarget "FDJClubsUITests" */;
+			buildPhases = (
+				3927C42A2AD32A6E00BF5F49 /* Sources */,
+				3927C42B2AD32A6E00BF5F49 /* Frameworks */,
+				3927C42C2AD32A6E00BF5F49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3927C4302AD32A6E00BF5F49 /* PBXTargetDependency */,
+			);
+			name = FDJClubsUITests;
+			productName = FDJClubsUITests;
+			productReference = 3927C42E2AD32A6E00BF5F49 /* FDJClubsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3927C40B2AD32A6D00BF5F49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3927C4122AD32A6D00BF5F49 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					3927C4232AD32A6E00BF5F49 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 3927C4122AD32A6D00BF5F49;
+					};
+					3927C42D2AD32A6E00BF5F49 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 3927C4122AD32A6D00BF5F49;
+					};
+				};
+			};
+			buildConfigurationList = 3927C40E2AD32A6D00BF5F49 /* Build configuration list for PBXProject "FDJClubs" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3927C40A2AD32A6D00BF5F49;
+			productRefGroup = 3927C4142AD32A6D00BF5F49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3927C4122AD32A6D00BF5F49 /* FDJClubs */,
+				3927C4232AD32A6E00BF5F49 /* FDJClubsTests */,
+				3927C42D2AD32A6E00BF5F49 /* FDJClubsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3927C4112AD32A6D00BF5F49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3927C41F2AD32A6E00BF5F49 /* Preview Assets.xcassets in Resources */,
+				3927C41B2AD32A6E00BF5F49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3927C4222AD32A6E00BF5F49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3927C42C2AD32A6E00BF5F49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3927C40F2AD32A6D00BF5F49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3927C4192AD32A6D00BF5F49 /* ContentView.swift in Sources */,
+				3927C4172AD32A6D00BF5F49 /* FDJClubsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3927C4202AD32A6E00BF5F49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3927C4292AD32A6E00BF5F49 /* FDJClubsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3927C42A2AD32A6E00BF5F49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3927C4352AD32A6E00BF5F49 /* FDJClubsUITestsLaunchTests.swift in Sources */,
+				3927C4332AD32A6E00BF5F49 /* FDJClubsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3927C4262AD32A6E00BF5F49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3927C4122AD32A6D00BF5F49 /* FDJClubs */;
+			targetProxy = 3927C4252AD32A6E00BF5F49 /* PBXContainerItemProxy */;
+		};
+		3927C4302AD32A6E00BF5F49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3927C4122AD32A6D00BF5F49 /* FDJClubs */;
+			targetProxy = 3927C42F2AD32A6E00BF5F49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3927C4362AD32A6E00BF5F49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3927C4372AD32A6E00BF5F49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3927C4392AD32A6E00BF5F49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FDJClubs/FDJClubs.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FDJClubs/Preview Content\"";
+				DEVELOPMENT_TEAM = SAAQGFL8P6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.hamzaelaidi.FDJClubs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3927C43A2AD32A6E00BF5F49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FDJClubs/FDJClubs.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FDJClubs/Preview Content\"";
+				DEVELOPMENT_TEAM = SAAQGFL8P6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.hamzaelaidi.FDJClubs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3927C43C2AD32A6E00BF5F49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SAAQGFL8P6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.hamzaelaidi.FDJClubsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FDJClubs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FDJClubs";
+			};
+			name = Debug;
+		};
+		3927C43D2AD32A6E00BF5F49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SAAQGFL8P6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.hamzaelaidi.FDJClubsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FDJClubs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FDJClubs";
+			};
+			name = Release;
+		};
+		3927C43F2AD32A6E00BF5F49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SAAQGFL8P6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.hamzaelaidi.FDJClubsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FDJClubs;
+			};
+			name = Debug;
+		};
+		3927C4402AD32A6E00BF5F49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SAAQGFL8P6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = come.hamzaelaidi.FDJClubsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FDJClubs;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3927C40E2AD32A6D00BF5F49 /* Build configuration list for PBXProject "FDJClubs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3927C4362AD32A6E00BF5F49 /* Debug */,
+				3927C4372AD32A6E00BF5F49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3927C4382AD32A6E00BF5F49 /* Build configuration list for PBXNativeTarget "FDJClubs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3927C4392AD32A6E00BF5F49 /* Debug */,
+				3927C43A2AD32A6E00BF5F49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3927C43B2AD32A6E00BF5F49 /* Build configuration list for PBXNativeTarget "FDJClubsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3927C43C2AD32A6E00BF5F49 /* Debug */,
+				3927C43D2AD32A6E00BF5F49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3927C43E2AD32A6E00BF5F49 /* Build configuration list for PBXNativeTarget "FDJClubsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3927C43F2AD32A6E00BF5F49 /* Debug */,
+				3927C4402AD32A6E00BF5F49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3927C40B2AD32A6D00BF5F49 /* Project object */;
+}
