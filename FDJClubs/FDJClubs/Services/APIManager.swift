@@ -13,7 +13,7 @@ protocol APIEndpoint {
     var path: String { get }
     var method: HTTPMethod { get }
     var headers: [String: String]? { get }
-    var parameters: [String: Any]? { get }
+    var parameters: [String: String]? { get }
 }
 
 enum HTTPMethod: String {

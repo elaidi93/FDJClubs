@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct TeamsView: View {
-    let teams : [Team]
+    
+    @ObservedObject var viewModel: TeamsViewModel
+    
+    init(viewModel: TeamsViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: createGridItems, spacing: 10) {
-                ForEach(teams, id: \.id) { item in
-                    TeamRow(item: item)
+        NavigationStack {
+            ScrollView {
+                LazyVGrid(columns: createGridItems, spacing: 10) {
+                    ForEach(viewModel.teams, id: \.id) { item in
+                        TeamRow(item: item)
+                    }
                 }
+                .navigationTitle("Teams")
+            }
+            .onAppear {
+                viewModel.fetchTeams()
             }
         }
     }
@@ -26,19 +37,5 @@ struct TeamsView: View {
 }
 
 #Preview {
-    TeamsView(
-        teams: [Team(
-            id: nil,
-            name: "Real Madrid",
-            badge: nil
-        ),Team(
-            id: nil,
-            name: "Barcelone",
-            badge: nil
-        ),Team(
-            id: nil,
-            name: "Athlético Madrid",
-            badge: nil
-        )]
-    )
+    TeamsView(viewModel: TeamsViewModel(teamsService: TeamsService(leagueName: "Real Madrid")))
 }

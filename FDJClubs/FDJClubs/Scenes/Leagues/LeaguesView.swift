@@ -14,11 +14,31 @@ struct LeaguesView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                LeaguesList(leagues: viewModel.leagues) { league in
-                    
+            List {
+                ForEach(viewModel.leagues, id: \.id) { league in
+                    NavigationLink(league.name ?? "") { TeamsView(
+                        viewModel: TeamsViewModel(
+                            teamsService: TeamsService(
+                                leagueName: league.name ?? ""
+                            )
+                        )
+                    )
+                    }
                 }
             }
+//            VStack {
+//                LeaguesList(leagues: viewModel.leagues) { league in
+//                    
+//                    NavigationLink("Show Detail View") { TeamsView(
+//                        viewModel: TeamsViewModel(
+//                            teamsService: TeamsService(
+//                                leagueName: league.name ?? ""
+//                            )
+//                        )
+//                    )
+//                    }
+//                }
+//            }
             .navigationTitle("Search League")
         }
         .onAppear {

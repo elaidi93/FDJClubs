@@ -18,7 +18,7 @@ struct Leagues: Decodable {
 
 class LeaguesService: LeaguesServiceProtocol {
     
-    let apiClient = URLSessionAPIClient<LeaguesEndpoint>()
+    let apiClient = URLSessionAPIClient<APPEndpoint>()
     
     func getLeagues() -> AnyPublisher<Leagues, Error> {
         return apiClient.request(.Leagues)

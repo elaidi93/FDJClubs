@@ -24,6 +24,8 @@
 		3927C4562AD3760B00BF5F49 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4552AD3760B00BF5F49 /* APIManager.swift */; };
 		3927C4582AD37CA100BF5F49 /* LeaguesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4572AD37CA100BF5F49 /* LeaguesRequest.swift */; };
 		3927C45A2AD3817300BF5F49 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4592AD3817300BF5F49 /* APIEndpoint.swift */; };
+		3927C45C2AD3937600BF5F49 /* TeamsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C45B2AD3937600BF5F49 /* TeamsRequest.swift */; };
+		3927C45F2AD39DBD00BF5F49 /* String+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C45E2AD39DBD00BF5F49 /* String+Encoding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		3927C4552AD3760B00BF5F49 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		3927C4572AD37CA100BF5F49 /* LeaguesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesRequest.swift; sourceTree = "<group>"; };
 		3927C4592AD3817300BF5F49 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		3927C45B2AD3937600BF5F49 /* TeamsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsRequest.swift; sourceTree = "<group>"; };
+		3927C45E2AD39DBD00BF5F49 /* String+Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Encoding.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		3927C4152AD32A6D00BF5F49 /* FDJClubs */ = {
 			isa = PBXGroup;
 			children = (
+				3927C45D2AD39DAE00BF5F49 /* Extensions */,
 				3927C4542AD375FA00BF5F49 /* Services */,
 				3927C4432AD363DB00BF5F49 /* Models */,
 				3927C4162AD32A6D00BF5F49 /* FDJClubsApp.swift */,
@@ -203,8 +208,17 @@
 				3927C4552AD3760B00BF5F49 /* APIManager.swift */,
 				3927C4572AD37CA100BF5F49 /* LeaguesRequest.swift */,
 				3927C4592AD3817300BF5F49 /* APIEndpoint.swift */,
+				3927C45B2AD3937600BF5F49 /* TeamsRequest.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		3927C45D2AD39DAE00BF5F49 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3927C45E2AD39DBD00BF5F49 /* String+Encoding.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3927C4452AD363ED00BF5F49 /* Team.swift in Sources */,
+				3927C45C2AD3937600BF5F49 /* TeamsRequest.swift in Sources */,
 				3927C4192AD32A6D00BF5F49 /* LeaguesView.swift in Sources */,
 				3927C4172AD32A6D00BF5F49 /* FDJClubsApp.swift in Sources */,
 				3927C44D2AD3657200BF5F49 /* TeamRow.swift in Sources */,
@@ -345,6 +360,7 @@
 				3927C4582AD37CA100BF5F49 /* LeaguesRequest.swift in Sources */,
 				3927C4512AD3662C00BF5F49 /* TeamsViewModel.swift in Sources */,
 				3927C45A2AD3817300BF5F49 /* APIEndpoint.swift in Sources */,
+				3927C45F2AD39DBD00BF5F49 /* String+Encoding.swift in Sources */,
 				3927C4532AD3663600BF5F49 /* LeaguesViewModels.swift in Sources */,
 				3927C4562AD3760B00BF5F49 /* APIManager.swift in Sources */,
 				3927C4472AD3642700BF5F49 /* League.swift in Sources */,

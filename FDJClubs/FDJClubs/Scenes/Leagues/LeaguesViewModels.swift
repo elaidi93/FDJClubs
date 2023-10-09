@@ -33,8 +33,7 @@ class LeaguesViewModel: ObservableObject {
     func fetchLeagues() {
         leaguesService.getLeagues()
             .receive(on: RunLoop.main)
-            .sink(receiveCompletion: { data in
-                print(data)
+            .sink(receiveCompletion: { _ in
             }, receiveValue: { [weak self] leagues in
                 self?.leagues = leagues.leagues
                 self?.allLeagues = leagues.leagues

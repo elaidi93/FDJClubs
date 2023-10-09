@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum LeaguesEndpoint: APIEndpoint {
+enum APPEndpoint: APIEndpoint {
     case Leagues
     case Teams(leagueName: String)
     
@@ -19,8 +19,8 @@ enum LeaguesEndpoint: APIEndpoint {
         switch self {
         case .Leagues:
             return "all_leagues.php"
-        case .Teams:
-            return "search_all_teams.php"
+        case let .Teams(leagueName):
+            return "search_all_teams.php?l=\(leagueName)"
         }
     }
     
@@ -42,12 +42,12 @@ enum LeaguesEndpoint: APIEndpoint {
         }
     }
     
-    var parameters: [String: Any]? {
+    var parameters: [String: String]? {
         switch self {
         case .Leagues:
             return [:]
-        case let .Teams(leagueName):
-            return ["l": leagueName]
+        case .Teams:
+            return [:]
         }
     }
 }
