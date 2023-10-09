@@ -28,19 +28,16 @@ struct LeaguesList: View {
         League(
             id: UUID().uuidString,
             name: "Premier league",
-            sport: nil,
             alternate: nil
         ),
         League(
             id: UUID().uuidString,
             name: "La Liga",
-            sport: nil,
             alternate: nil
         ),
         League(
             id: UUID().uuidString,
             name: "Bundesliga",
-            sport: nil,
             alternate: nil
         )
     ]

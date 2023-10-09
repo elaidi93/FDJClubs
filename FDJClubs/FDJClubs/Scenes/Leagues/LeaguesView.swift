@@ -59,13 +59,11 @@ struct LoaderView: View {
         League(
             id: UUID().uuidString,
             name: "Ligne 1",
-            sport: nil,
             alternate: nil
         ),
         League(
             id: UUID().uuidString,
             name: "Marseille",
-            sport: nil,
             alternate: nil
         )
     ]

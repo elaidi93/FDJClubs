@@ -10,17 +10,18 @@ import Combine
 
 class LeaguesViewModel: ObservableObject {
     
-    private var cancellables = Set<AnyCancellable>()
-    let leaguesService: LeaguesServiceProtocol
     @Published var leagues: [League] = []
-    private var allLeagues: [League] = []
     @Published var isLoading = true
+    
+    private var cancellables = Set<AnyCancellable>()
+    private var allLeagues: [League] = []
+    
+    let leaguesService: LeaguesServiceProtocol
     
     init(leaguesService: LeaguesServiceProtocol) {
         self.leaguesService = leaguesService
     }
     
-    // Search leagues
     func search(searchText: String) {
         if searchText.isEmpty {
             leagues = allLeagues
