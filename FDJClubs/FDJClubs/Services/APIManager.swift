@@ -20,7 +20,7 @@ enum HTTPMethod: String {
 
 enum APIError: Error {
     case invalidResponse
-    case invalidData
+    case invalidURL
 }
 
 protocol APIClient {
@@ -32,7 +32,7 @@ class URLSessionAPIClient<EndpointType: APIEndpoint>: APIClient {
     func request<T: Decodable>(_ endpoint: EndpointType) -> AnyPublisher<T, Error> {
         
         guard let url = URL(string: endpoint.baseURL + endpoint.path) else {
-            return Fail(error: APIError.invalidData)
+            return Fail(error: APIError.invalidURL)
                 .eraseToAnyPublisher()
         }
         
@@ -42,10 +42,11 @@ class URLSessionAPIClient<EndpointType: APIEndpoint>: APIClient {
         return URLSession.shared.dataTaskPublisher(for: request)
             .subscribe(on: DispatchQueue.global(qos: .background))
             .tryMap { data, response -> Data in
+                
                 guard let httpResponse = response as? HTTPURLResponse,
-                      (200...299).contains(httpResponse.statusCode) else {
-                    throw APIError.invalidResponse
-                }
+                      (200...299).contains(httpResponse.statusCode) 
+                else { throw APIError.invalidResponse }
+                
                 return data
             }
             .decode(type: T.self, decoder: JSONDecoder())
