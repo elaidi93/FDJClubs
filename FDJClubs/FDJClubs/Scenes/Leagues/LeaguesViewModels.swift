@@ -14,6 +14,7 @@ class LeaguesViewModel: ObservableObject {
     let leaguesService: LeaguesServiceProtocol
     @Published var leagues: [League] = []
     private var allLeagues: [League] = []
+    @Published var isLoading = true
     
     init(leaguesService: LeaguesServiceProtocol) {
         self.leaguesService = leaguesService
@@ -33,7 +34,8 @@ class LeaguesViewModel: ObservableObject {
     func fetchLeagues() {
         leaguesService.getLeagues()
             .receive(on: RunLoop.main)
-            .sink(receiveCompletion: { _ in
+            .sink(receiveCompletion: { [weak self] _ in
+                self?.isLoading = false
             }, receiveValue: { [weak self] leagues in
                 self?.leagues = leagues.leagues
                 self?.allLeagues = leagues.leagues

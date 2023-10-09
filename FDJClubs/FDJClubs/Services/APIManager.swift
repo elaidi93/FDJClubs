@@ -9,11 +9,9 @@ import Foundation
 import Combine
 
 protocol APIEndpoint {
-    var baseURL: URL { get }
+    var baseURL: String { get }
     var path: String { get }
     var method: HTTPMethod { get }
-    var headers: [String: String]? { get }
-    var parameters: [String: String]? { get }
 }
 
 enum HTTPMethod: String {
@@ -32,14 +30,14 @@ protocol APIClient {
 
 class URLSessionAPIClient<EndpointType: APIEndpoint>: APIClient {
     func request<T: Decodable>(_ endpoint: EndpointType) -> AnyPublisher<T, Error> {
-        let url = endpoint.baseURL.appendingPathComponent(endpoint.path)
+        
+        guard let url = URL(string: endpoint.baseURL + endpoint.path) else {
+            return Fail(error: APIError.invalidData)
+                .eraseToAnyPublisher()
+        }
+        
         var request = URLRequest(url: url)
         request.httpMethod = endpoint.method.rawValue
-        
-        endpoint.headers?.forEach {
-            request.addValue($0.value,
-                             forHTTPHeaderField: $0.key)
-        }
         
         return URLSession.shared.dataTaskPublisher(for: request)
             .subscribe(on: DispatchQueue.global(qos: .background))

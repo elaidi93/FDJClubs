@@ -39,7 +39,7 @@ struct TeamRow: View {
 #Preview {
     TeamRow(
         item: Team(
-            id: "FakeId",
+            id: UUID().uuidString,
             name: "Real Madrid",
             badge: "Fake url"
         )

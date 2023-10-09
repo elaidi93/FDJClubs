@@ -14,31 +14,23 @@ struct LeaguesView: View {
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(viewModel.leagues, id: \.id) { league in
-                    NavigationLink(league.name ?? "") { TeamsView(
-                        viewModel: TeamsViewModel(
-                            teamsService: TeamsService(
-                                leagueName: league.name ?? ""
-                            )
-                        )
-                    )
+            VStack {
+                if viewModel.isLoading {
+                    LoaderView()
+                } else {
+                    List {
+                        ForEach(viewModel.leagues, id: \.id) { league in
+                            NavigationLink(league.name ?? "") { TeamsView(
+                                viewModel: TeamsViewModel(
+                                    teamsService: TeamsService(
+                                        leagueName: league.name ?? ""
+                                    )
+                                )
+                            )}
+                        }
                     }
                 }
             }
-//            VStack {
-//                LeaguesList(leagues: viewModel.leagues) { league in
-//                    
-//                    NavigationLink("Show Detail View") { TeamsView(
-//                        viewModel: TeamsViewModel(
-//                            teamsService: TeamsService(
-//                                leagueName: league.name ?? ""
-//                            )
-//                        )
-//                    )
-//                    }
-//                }
-//            }
             .navigationTitle("Search League")
         }
         .onAppear {
@@ -52,17 +44,26 @@ struct LeaguesView: View {
     }
 }
 
+struct LoaderView: View {
+    
+    var body: some View {
+        ProgressView()
+            .scaledToFit()
+            .progressViewStyle(CircularProgressViewStyle(tint: .blue))
+    }
+}
+
 #Preview {
     let viewModel = LeaguesViewModel(leaguesService: LeaguesService())
     viewModel.leagues = [
         League(
-            id: "1",
+            id: UUID().uuidString,
             name: "Ligne 1",
             sport: nil,
             alternate: nil
         ),
         League(
-            id: "2",
+            id: UUID().uuidString,
             name: "Marseille",
             sport: nil,
             alternate: nil

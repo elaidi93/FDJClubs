@@ -37,5 +37,11 @@ struct TeamsView: View {
 }
 
 #Preview {
-    TeamsView(viewModel: TeamsViewModel(teamsService: TeamsService(leagueName: "Real Madrid")))
+    TeamsView(
+        viewModel: TeamsViewModel(
+            teamsService: TeamsService(
+                leagueName: "Ligue 1"
+            )
+        )
+    )
 }

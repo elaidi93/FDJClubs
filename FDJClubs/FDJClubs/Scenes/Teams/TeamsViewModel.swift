@@ -21,8 +21,13 @@ class TeamsViewModel: ObservableObject {
     func fetchTeams() {
         teamsService.getTeams()
             .receive(on: RunLoop.main)
-            .sink(receiveCompletion: { data in
-                print(data)
+            .sink(receiveCompletion: { result in
+                switch result {
+                case let .failure(error):
+                    print(error.localizedDescription)
+                case .finished:
+                    break
+                }
             }, receiveValue: { [weak self] teams in
                 self?.teams = teams.teams
             }).store(in: &cancellables)

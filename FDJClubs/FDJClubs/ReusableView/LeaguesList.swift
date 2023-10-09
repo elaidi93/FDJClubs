@@ -26,19 +26,19 @@ struct LeaguesList: View {
 #Preview {
     let leagues: [League] = [
         League(
-            id: "1",
+            id: UUID().uuidString,
             name: "Premier league",
             sport: nil,
             alternate: nil
         ),
         League(
-            id: "2",
+            id: UUID().uuidString,
             name: "La Liga",
             sport: nil,
             alternate: nil
         ),
         League(
-            id: "3",
+            id: UUID().uuidString,
             name: "Bundesliga",
             sport: nil,
             alternate: nil
