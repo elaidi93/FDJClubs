@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		3927C4172AD32A6D00BF5F49 /* FDJClubsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4162AD32A6D00BF5F49 /* FDJClubsApp.swift */; };
-		3927C4192AD32A6D00BF5F49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4182AD32A6D00BF5F49 /* ContentView.swift */; };
+		3927C4192AD32A6D00BF5F49 /* LeaguesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4182AD32A6D00BF5F49 /* LeaguesView.swift */; };
 		3927C41B2AD32A6E00BF5F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3927C41A2AD32A6E00BF5F49 /* Assets.xcassets */; };
 		3927C41F2AD32A6E00BF5F49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3927C41E2AD32A6E00BF5F49 /* Preview Assets.xcassets */; };
-		3927C4292AD32A6E00BF5F49 /* FDJClubsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4282AD32A6E00BF5F49 /* FDJClubsTests.swift */; };
 		3927C4332AD32A6E00BF5F49 /* FDJClubsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4322AD32A6E00BF5F49 /* FDJClubsUITests.swift */; };
 		3927C4352AD32A6E00BF5F49 /* FDJClubsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4342AD32A6E00BF5F49 /* FDJClubsUITestsLaunchTests.swift */; };
+		3927C4422AD32D3400BF5F49 /* LeaguesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4412AD32D3400BF5F49 /* LeaguesList.swift */; };
+		3927C4452AD363ED00BF5F49 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4442AD363ED00BF5F49 /* Team.swift */; };
+		3927C4472AD3642700BF5F49 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4462AD3642700BF5F49 /* League.swift */; };
+		3927C44A2AD364C700BF5F49 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4492AD364C700BF5F49 /* TeamsView.swift */; };
+		3927C44D2AD3657200BF5F49 /* TeamRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C44C2AD3657200BF5F49 /* TeamRow.swift */; };
+		3927C4512AD3662C00BF5F49 /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4502AD3662C00BF5F49 /* TeamsViewModel.swift */; };
+		3927C4532AD3663600BF5F49 /* LeaguesViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4522AD3663600BF5F49 /* LeaguesViewModels.swift */; };
+		3927C4562AD3760B00BF5F49 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4552AD3760B00BF5F49 /* APIManager.swift */; };
+		3927C4582AD37CA100BF5F49 /* LeaguesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4572AD37CA100BF5F49 /* LeaguesRequest.swift */; };
+		3927C45A2AD3817300BF5F49 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4592AD3817300BF5F49 /* APIEndpoint.swift */; };
+		3927C45C2AD3937600BF5F49 /* TeamsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C45B2AD3937600BF5F49 /* TeamsRequest.swift */; };
+		3927C45F2AD39DBD00BF5F49 /* String+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C45E2AD39DBD00BF5F49 /* String+Encoding.swift */; };
+		3927C4622AD4B07E00BF5F49 /* LeaguesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4612AD4B07E00BF5F49 /* LeaguesViewModelTests.swift */; };
+		3927C4642AD4C45100BF5F49 /* XCTestCase+wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4632AD4C45100BF5F49 /* XCTestCase+wait.swift */; };
+		3927C4682AD4C48D00BF5F49 /* MockLeaguesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C4672AD4C48D00BF5F49 /* MockLeaguesService.swift */; };
+		3927C46B2AD4C7E200BF5F49 /* TeamsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C46A2AD4C7E200BF5F49 /* TeamsViewModelTests.swift */; };
+		3927C46D2AD4C92600BF5F49 /* MockTeamsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927C46C2AD4C92600BF5F49 /* MockTeamsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,15 +52,31 @@
 /* Begin PBXFileReference section */
 		3927C4132AD32A6D00BF5F49 /* FDJClubs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FDJClubs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3927C4162AD32A6D00BF5F49 /* FDJClubsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJClubsApp.swift; sourceTree = "<group>"; };
-		3927C4182AD32A6D00BF5F49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3927C4182AD32A6D00BF5F49 /* LeaguesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesView.swift; sourceTree = "<group>"; };
 		3927C41A2AD32A6E00BF5F49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3927C41C2AD32A6E00BF5F49 /* FDJClubs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FDJClubs.entitlements; sourceTree = "<group>"; };
 		3927C41E2AD32A6E00BF5F49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3927C4242AD32A6E00BF5F49 /* FDJClubsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDJClubsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3927C4282AD32A6E00BF5F49 /* FDJClubsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJClubsTests.swift; sourceTree = "<group>"; };
 		3927C42E2AD32A6E00BF5F49 /* FDJClubsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDJClubsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3927C4322AD32A6E00BF5F49 /* FDJClubsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJClubsUITests.swift; sourceTree = "<group>"; };
 		3927C4342AD32A6E00BF5F49 /* FDJClubsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJClubsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3927C4412AD32D3400BF5F49 /* LeaguesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesList.swift; sourceTree = "<group>"; };
+		3927C4442AD363ED00BF5F49 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		3927C4462AD3642700BF5F49 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		3927C4492AD364C700BF5F49 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		3927C44C2AD3657200BF5F49 /* TeamRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRow.swift; sourceTree = "<group>"; };
+		3927C4502AD3662C00BF5F49 /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
+		3927C4522AD3663600BF5F49 /* LeaguesViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewModels.swift; sourceTree = "<group>"; };
+		3927C4552AD3760B00BF5F49 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		3927C4572AD37CA100BF5F49 /* LeaguesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesRequest.swift; sourceTree = "<group>"; };
+		3927C4592AD3817300BF5F49 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		3927C45B2AD3937600BF5F49 /* TeamsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsRequest.swift; sourceTree = "<group>"; };
+		3927C45E2AD39DBD00BF5F49 /* String+Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Encoding.swift"; sourceTree = "<group>"; };
+		3927C4612AD4B07E00BF5F49 /* LeaguesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewModelTests.swift; sourceTree = "<group>"; };
+		3927C4632AD4C45100BF5F49 /* XCTestCase+wait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+wait.swift"; sourceTree = "<group>"; };
+		3927C4672AD4C48D00BF5F49 /* MockLeaguesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLeaguesService.swift; sourceTree = "<group>"; };
+		3927C46A2AD4C7E200BF5F49 /* TeamsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModelTests.swift; sourceTree = "<group>"; };
+		3927C46C2AD4C92600BF5F49 /* MockTeamsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTeamsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +127,13 @@
 		3927C4152AD32A6D00BF5F49 /* FDJClubs */ = {
 			isa = PBXGroup;
 			children = (
-				3927C4162AD32A6D00BF5F49 /* FDJClubsApp.swift */,
-				3927C4182AD32A6D00BF5F49 /* ContentView.swift */,
-				3927C41A2AD32A6E00BF5F49 /* Assets.xcassets */,
-				3927C41C2AD32A6E00BF5F49 /* FDJClubs.entitlements */,
+				3927C45D2AD39DAE00BF5F49 /* Extensions */,
+				3927C4542AD375FA00BF5F49 /* Services */,
+				3927C4432AD363DB00BF5F49 /* Models */,
+				3927C4602AD495E600BF5F49 /* Ressources */,
+				3927C44B2AD3653200BF5F49 /* Scenes */,
 				3927C41D2AD32A6E00BF5F49 /* Preview Content */,
+				3927C4482AD3648B00BF5F49 /* ReusableView */,
 			);
 			path = FDJClubs;
 			sourceTree = "<group>";
@@ -115,7 +149,9 @@
 		3927C4272AD32A6E00BF5F49 /* FDJClubsTests */ = {
 			isa = PBXGroup;
 			children = (
-				3927C4282AD32A6E00BF5F49 /* FDJClubsTests.swift */,
+				3927C4662AD4C47C00BF5F49 /* Mock */,
+				3927C4692AD4C4BD00BF5F49 /* Scenes */,
+				3927C4652AD4C46C00BF5F49 /* Extension */,
 			);
 			path = FDJClubsTests;
 			sourceTree = "<group>";
@@ -127,6 +163,106 @@
 				3927C4342AD32A6E00BF5F49 /* FDJClubsUITestsLaunchTests.swift */,
 			);
 			path = FDJClubsUITests;
+			sourceTree = "<group>";
+		};
+		3927C4432AD363DB00BF5F49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3927C4442AD363ED00BF5F49 /* Team.swift */,
+				3927C4462AD3642700BF5F49 /* League.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3927C4482AD3648B00BF5F49 /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				3927C4412AD32D3400BF5F49 /* LeaguesList.swift */,
+				3927C44C2AD3657200BF5F49 /* TeamRow.swift */,
+			);
+			path = ReusableView;
+			sourceTree = "<group>";
+		};
+		3927C44B2AD3653200BF5F49 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3927C44E2AD3660900BF5F49 /* Leagues */,
+				3927C44F2AD3661B00BF5F49 /* Teams */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3927C44E2AD3660900BF5F49 /* Leagues */ = {
+			isa = PBXGroup;
+			children = (
+				3927C4182AD32A6D00BF5F49 /* LeaguesView.swift */,
+				3927C4522AD3663600BF5F49 /* LeaguesViewModels.swift */,
+			);
+			path = Leagues;
+			sourceTree = "<group>";
+		};
+		3927C44F2AD3661B00BF5F49 /* Teams */ = {
+			isa = PBXGroup;
+			children = (
+				3927C4492AD364C700BF5F49 /* TeamsView.swift */,
+				3927C4502AD3662C00BF5F49 /* TeamsViewModel.swift */,
+			);
+			path = Teams;
+			sourceTree = "<group>";
+		};
+		3927C4542AD375FA00BF5F49 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3927C4552AD3760B00BF5F49 /* APIManager.swift */,
+				3927C4572AD37CA100BF5F49 /* LeaguesRequest.swift */,
+				3927C4592AD3817300BF5F49 /* APIEndpoint.swift */,
+				3927C45B2AD3937600BF5F49 /* TeamsRequest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3927C45D2AD39DAE00BF5F49 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3927C45E2AD39DBD00BF5F49 /* String+Encoding.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3927C4602AD495E600BF5F49 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				3927C4162AD32A6D00BF5F49 /* FDJClubsApp.swift */,
+				3927C41A2AD32A6E00BF5F49 /* Assets.xcassets */,
+				3927C41C2AD32A6E00BF5F49 /* FDJClubs.entitlements */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		3927C4652AD4C46C00BF5F49 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3927C4632AD4C45100BF5F49 /* XCTestCase+wait.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3927C4662AD4C47C00BF5F49 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				3927C4672AD4C48D00BF5F49 /* MockLeaguesService.swift */,
+				3927C46C2AD4C92600BF5F49 /* MockTeamsService.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		3927C4692AD4C4BD00BF5F49 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3927C4612AD4B07E00BF5F49 /* LeaguesViewModelTests.swift */,
+				3927C46A2AD4C7E200BF5F49 /* TeamsViewModelTests.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +395,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3927C4192AD32A6D00BF5F49 /* ContentView.swift in Sources */,
+				3927C4452AD363ED00BF5F49 /* Team.swift in Sources */,
+				3927C45C2AD3937600BF5F49 /* TeamsRequest.swift in Sources */,
+				3927C4192AD32A6D00BF5F49 /* LeaguesView.swift in Sources */,
 				3927C4172AD32A6D00BF5F49 /* FDJClubsApp.swift in Sources */,
+				3927C44D2AD3657200BF5F49 /* TeamRow.swift in Sources */,
+				3927C44A2AD364C700BF5F49 /* TeamsView.swift in Sources */,
+				3927C4582AD37CA100BF5F49 /* LeaguesRequest.swift in Sources */,
+				3927C4512AD3662C00BF5F49 /* TeamsViewModel.swift in Sources */,
+				3927C45A2AD3817300BF5F49 /* APIEndpoint.swift in Sources */,
+				3927C45F2AD39DBD00BF5F49 /* String+Encoding.swift in Sources */,
+				3927C4532AD3663600BF5F49 /* LeaguesViewModels.swift in Sources */,
+				3927C4562AD3760B00BF5F49 /* APIManager.swift in Sources */,
+				3927C4472AD3642700BF5F49 /* League.swift in Sources */,
+				3927C4422AD32D3400BF5F49 /* LeaguesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +416,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3927C4292AD32A6E00BF5F49 /* FDJClubsTests.swift in Sources */,
+				3927C4622AD4B07E00BF5F49 /* LeaguesViewModelTests.swift in Sources */,
+				3927C46B2AD4C7E200BF5F49 /* TeamsViewModelTests.swift in Sources */,
+				3927C46D2AD4C92600BF5F49 /* MockTeamsService.swift in Sources */,
+				3927C4682AD4C48D00BF5F49 /* MockLeaguesService.swift in Sources */,
+				3927C4642AD4C45100BF5F49 /* XCTestCase+wait.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = FDJClubs/FDJClubs.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FDJClubs/Ressources/FDJClubs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FDJClubs/Preview Content\"";
@@ -454,7 +606,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = FDJClubs/FDJClubs.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FDJClubs/Ressources/FDJClubs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FDJClubs/Preview Content\"";
